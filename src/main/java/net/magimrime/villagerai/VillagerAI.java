@@ -1,4 +1,4 @@
-package net.magimrime.mineshaft_extension;
+package net.magimrime.villagerai;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -16,15 +16,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MineshaftExtension.MODID)
-public class MineshaftExtension
+@Mod(VillagerAI.MODID)
+public class VillagerAI
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "villagerai";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public MineshaftExtension()
+    public VillagerAI()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the commonSetup method for modloading
