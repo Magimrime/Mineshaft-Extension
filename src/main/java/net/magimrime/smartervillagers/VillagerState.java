@@ -1,4 +1,4 @@
-package net.magimrime.villagerai;
+package net.magimrime.smartervillagers;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.GameRules;
@@ -11,11 +11,6 @@ import java.util.UUID;
 
 public class VillagerState {
     public static final String COURAGE_KEY = "courage";
-
-    public static final GameRules.Key<GameRules.BooleanValue> SHOW_VILLAGER_COURAGE = GameRules.register(
-            "showVillagerCourage",
-            GameRules.Category.MISC,
-            GameRules.BooleanValue.create(false));
 
     public static final Map<UUID, Long> blockHurtTime = new HashMap<>();
     public static final int PANIC_SUPPRESS_TICKS = 100;

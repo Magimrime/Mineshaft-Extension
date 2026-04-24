@@ -1,4 +1,4 @@
-package net.magimrime.villagerai;
+package net.magimrime.smartervillagers;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -183,7 +183,7 @@ public class VillagerEventHandler {
             return;
         if (!(villager.level() instanceof ServerLevel serverLevel))
             return;
-        if (!serverLevel.getGameRules().getBoolean(VillagerState.SHOW_VILLAGER_COURAGE))
+        if (!serverLevel.getGameRules().getBoolean(VillagerAI.SHOW_VILLAGER_COURAGE))
             return;
         if (villager.tickCount % 40 != 0)
             return; // burst every 2 s

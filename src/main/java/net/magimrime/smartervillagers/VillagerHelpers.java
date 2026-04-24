@@ -1,4 +1,4 @@
-package net.magimrime.villagerai;
+package net.magimrime.smartervillagers;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.npc.Villager;

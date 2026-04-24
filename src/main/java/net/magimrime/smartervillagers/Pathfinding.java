@@ -1,4 +1,4 @@
-package net.magimrime.villagerai;
+package net.magimrime.smartervillagers;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
@@ -23,4 +23,3 @@ public class Pathfinding {
     public static void register(IEventBus eventBus) {
     }
 }
-

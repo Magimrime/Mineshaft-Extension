@@ -1,6 +1,7 @@
-package net.magimrime.villagerai;
+package net.magimrime.smartervillagers;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.GameRules;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,8 +21,13 @@ import org.slf4j.Logger;
 @Mod(VillagerAI.MODID)
 public class VillagerAI {
 
-    public static final String MODID = "villagerai";
+    public static final String MODID = "smartervillagers";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static final GameRules.Key<GameRules.BooleanValue> SHOW_VILLAGER_COURAGE = GameRules.register(
+            "showVillagerCourage",
+            GameRules.Category.MISC,
+            GameRules.BooleanValue.create(false));
 
     public VillagerAI() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

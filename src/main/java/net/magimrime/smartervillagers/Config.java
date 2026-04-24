@@ -1,4 +1,4 @@
-package net.magimrime.villagerai;
+package net.magimrime.smartervillagers;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
